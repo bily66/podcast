@@ -1,0 +1,8 @@
+@each $color, $value in $colors {
+	.bg-#{$color} {
+		background-color: nth($value, 1);
+	}
+	.text-#{$color} {
+		color: nth($value, 1);
+	}
+}

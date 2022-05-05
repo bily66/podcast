@@ -1,0 +1,104 @@
+//
+$enable-grid-classes:         true !default;
+$enable-important-utilities:  true !default;
+
+// 欄位設定
+$grid-columns:        12 !default;
+$grid-gutter-width:   1.25rem !default;
+$container-padding-x: $grid-gutter-width * .5 !default;
+
+// breakpoint
+$grid-breakpoints: (
+  '': 0px,
+  xs: 414px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+) !default;
+
+// breakpoint 內，內文寬度
+$container-max-widths: (
+  xs: 100%,
+  sm: 100%,
+  md: 960px,
+  lg: 1100px,
+) !default;
+
+// 間距設定
+$spacer:  0.0625rem; //1px
+$spacers: (
+  "0":  $spacer * 0,
+  "5":  $spacer * 5,
+  "10": $spacer * 10,
+  "20": $spacer * 20,
+  "30": $spacer * 30,
+  "40": $spacer * 40,
+  "auto": auto,
+);
+
+// ---------------------------------------------------------
+
+// header text 設定
+$h1:    $spacer * 40; //40px
+$h2:    $spacer * 32; //32px
+$h3:    $spacer * 22; //22px
+$h4:    $spacer * 18; //18px
+$h5:    $spacer * 16; //16px
+$h6:    $spacer * 14; //14px
+
+$h1-m:  $spacer * 28; //28px
+$h2-m:  $spacer * 22; //22px
+$h3-m:  $spacer * 22; //22px
+$h4-m:  $spacer * 18; //18px
+$h5-m:  $spacer * 16; //16px
+$h6-m:  $spacer * 14; //14px
+
+// ---------------------------------------------------------
+
+// 藍色色碼
+$blue:             #003a9f !default;
+
+// 灰色階色碼
+$gray-100:         #F5F5F5 !default;
+$gray-200:         #E3E3E3 !default;
+$gray-300:         #DBDDDD !default;
+$gray-400:         #939EA7 !default;
+$gray-500:         #707070 !default;
+
+// 紅色階色碼
+$red-300:          #D60C18 !default; //primary
+$red-500:          #800008 !default; //primary-variant
+
+// 無彩色色碼
+$white:           #ffffff !default; //background
+$gray:              $gray-100 !default;
+$black:           #000 !default;
+$dark:              darken($gray-500, 5%) !default;
+
+// 語易化色碼
+$surface:           $blue;
+$primary:           $red-300 !default;
+$primary-variant:   $red-500 !default;
+$secondary:         $gray-300 !default;
+$secondary-variant: $gray-500 !default;
+
+// 社群軟體色碼
+$facebook:        #1877f2 !default;
+$google:          #EA4335 !default;
+$line:            #00c200 !default;
+$instagram:       #dd2a7b !default;
+$weibo:           #e6162d !default;
+$rss:             #ff5700 !default;
+$twitter:         #00acee !default;
+$whatapp:         #4fce5d !default;
+$mail:              $surface !default;
+
+// 語易化色碼 map
+$colors: () !default;
+$colors: map-merge((
+  "surface":            ($surface,            $white),
+  "primary":            ($primary,            $white),
+  "primary-variant":    ($primary-variant,    $white),
+  "secondary":          ($secondary,          $white),
+  "secondary-variant":  ($secondary-variant,  $white),
+), $colors);
