@@ -67,6 +67,7 @@ $gray-500:         #707070 !default;
 
 // 紅色階色碼
 $red-300:          #D60C18 !default; //primary
+$red-400:          #9A3239 !default;
 $red-500:          #800008 !default; //primary-variant
 
 // 無彩色色碼
@@ -98,6 +99,7 @@ $colors: () !default;
 $colors: map-merge((
   "surface":            ($surface,            $white),
   "primary":            ($primary,            $white),
+  "primary-400":        ($red-400,            $white),
   "primary-variant":    ($primary-variant,    $white),
   "secondary":          ($secondary,          $white),
   "secondary-variant":  ($secondary-variant,  $white),

@@ -12,7 +12,7 @@ header {
   }
 }
 
-nav {
+nav.navbar {
   @include media-breakpoint-down(md) {
     position: absolute;
     top: 0;

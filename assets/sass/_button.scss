@@ -1,0 +1,23 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    span {
+        &.material-icons-round {
+            margin-left: 3px;
+        }
+    }
+    &.btn-text {
+        &.btn-primary {
+            color: $primary;
+            &:hover {
+                color: $primary-variant;
+            }
+        }
+        &.btn-black {
+            color: $black;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

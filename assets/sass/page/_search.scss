@@ -1,0 +1,30 @@
+.search-page {
+    .container {
+        max-width: 880px;
+    }
+}
+.sort-nav {
+    border-bottom: 1px solid $gray-200;
+    ul {
+        @include list(0 0 -1px, 0, none);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            display: block;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            padding-left: 25px;
+            padding-right: 25px;
+            color: $black;
+            border-bottom: 3px solid transparent;
+            &:hover {
+                color: $primary;
+            }
+            &.active {
+                color: $primary;
+                border-bottom-color: $primary;
+            }
+        }
+    }
+}

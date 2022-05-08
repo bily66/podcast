@@ -11,6 +11,9 @@ $hamburger: (
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
   span {
     display: block;
     width: 100%;

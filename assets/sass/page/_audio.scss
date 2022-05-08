@@ -1,0 +1,126 @@
+.audio-page {
+    .container {
+        max-width: 920px;
+    }
+    h1 {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+    hr {
+        border: solid $gray-200;
+        border-width: 1px 0 0;
+    }
+    .preface {
+        @include media-breakpoint-up(md) {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            &.preface-ellipse {
+                @include lineclamp(3);
+            }
+        }
+    }
+    .info-function {
+        display: flex;
+        justify-content: space-between;
+        .preface-button {
+            text-decoration: underline;
+            text-underline-position: under;
+            background-color: transparent;
+            border: 0;
+        }
+    }
+    .editor-display {
+        .editor-text {
+            position: relative;
+            > *:first-child {
+                margin-top: 0;
+            }
+        }
+        .editor-button {
+            display: none;
+            margin: 0 auto;
+            padding: 20px;
+            text-decoration: underline;
+            text-underline-position: under;
+            background-color: transparent;
+            border: 0;
+        }
+        &.editor-ellipse {
+            .editor-text {
+                overflow: hidden;
+                @include media-breakpoint-up(md) {
+                    max-height: 390px;
+                }
+                @include media-breakpoint-down(md) {
+                    max-height: 420px;
+                }
+                &::after {
+                    @include beforeafter('', block);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100px;
+                    background-image: linear-gradient(top, rgba($white, 0) 0%,rgba($white, 1) 100%);
+                }
+            }
+            .editor-button {
+                display: table;
+            }
+        }
+    }
+}
+
+.recommend-block {
+    background-color: $gray-100;
+}
+
+.cards-recommend {
+    margin-top: 15px;
+    @include media-breakpoint-up(md) {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    @include media-breakpoint-down(md) {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .card-item {
+        @include media-breakpoint-up(md) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @include media-breakpoint-down(md) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .card-txt {
+        padding: 10px 10px 15px;
+        background-color: $white;
+        .btn-black {
+            height: $h5 * 1.5 * 3;
+            @include lineclamp(3);
+        }
+    }
+    .detail {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        color: $gray-500;
+        font-size: $h6;
+        .time {
+            display: flex;
+            align-items: center;
+            span.material-icons-outlined {
+                margin-right: 5px;
+                font-size: $h6;
+            }
+        }
+    }
+}
