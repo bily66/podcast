@@ -3964,19 +3964,19 @@ footer {
   margin-left: 3px;
 }
 
-.bg-images .index-page .title,
-.bg-primary-400 .index-page .title {
+.index-page .bg-images .title,
+.index-page .bg-primary-400 .title {
   color: #ffffff;
 }
 
-.bg-images .index-page .title a.btn,
-.bg-primary-400 .index-page .title a.btn {
+.index-page .bg-images .title a.btn,
+.index-page .bg-primary-400 .title a.btn {
   color: #ffffff;
   border-color: #ffffff;
 }
 
-.bg-images .index-page .title a.btn:hover,
-.bg-primary-400 .index-page .title a.btn:hover {
+.index-page .bg-images .title a.btn:hover,
+.index-page .bg-primary-400 .title a.btn:hover {
   color: #000;
   background-color: #ffffff;
 }
@@ -4285,7 +4285,6 @@ section .bg-images .container {
 .cards-latest .card-item .item-txt a.h5 {
   margin-top: 0;
   margin-bottom: 0;
-  color: #000;
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
@@ -4391,7 +4390,7 @@ section .bg-images .container {
 .audio-page .editor-display .editor-button {
   display: none;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 0;
   text-decoration: underline;
   text-underline-position: under;
   background-color: transparent;

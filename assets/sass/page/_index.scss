@@ -22,8 +22,10 @@
                 }
             }
         }
-        .bg-images &,
-        .bg-primary-400 & {
+    }
+    .bg-images,
+    .bg-primary-400 {
+        .title {
             color: $white;
             a.btn {
                 color: $white;
@@ -263,7 +265,6 @@ section {
                 &.h5 {
                     margin-top: 0;
                     margin-bottom: 0;
-                    color: $black;
                     @include lineclamp(2);
                 }
                 &.h6 {
