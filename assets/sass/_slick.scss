@@ -58,10 +58,10 @@
             }
         }
         .promote-banner & {
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(sm) {
                 left: -20px;
             }
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(sm) {
                 left: 20px;
             }
         }
@@ -75,10 +75,10 @@
             }
         }
         .promote-banner & {
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(sm) {
                 right: -20px;
             }
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(sm) {
                 right: 20px;
             }
         }

@@ -10,13 +10,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 45px;
         a {
             display: block;
+            min-width: 80px;
             padding-top: 11px;
             padding-bottom: 11px;
-            padding-left: 25px;
-            padding-right: 25px;
             color: $black;
+            text-align: center;
             border-bottom: 3px solid transparent;
             &:hover {
                 color: $primary;
@@ -26,5 +27,58 @@
                 border-bottom-color: $primary;
             }
         }
+    }
+}
+.filter-nav {
+    border-bottom: 1px solid $gray-200;
+    ul {
+        @include list(0, 0, none);
+        li {
+            cursor: pointer;
+        }
+    }
+    > ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 13px 20px;
+            > ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                min-width: 100%;
+                background-color: $white;
+                border: 1px solid $gray-200;
+                > li {
+                    padding: 10px;
+                    color: $black;
+                    text-align: center;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+            &:hover {
+                color: $primary;
+                .material-symbols-outlined {
+                    transform: rotate(180deg);
+                }
+                > ul {
+                    display: block;
+                }
+            }
+        }
+    }
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 48
     }
 }

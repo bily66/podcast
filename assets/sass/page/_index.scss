@@ -89,9 +89,14 @@ section {
     &.promote {
         overflow: hidden;
         .container {
-            max-width: 920px;
+            @include media-breakpoint-up(sm) {
+                max-width: 500px;
+            }
+            @include media-breakpoint-up(md) {
+                max-width: 920px;
+            }
             a {
-                @include media-breakpoint-up(md) {
+                @include media-breakpoint-up(sm) {
                     padding: 0 5px;
                 }
             }
@@ -207,8 +212,9 @@ section {
                 color: $gray-500;
             }
         }
-        .h5 {
+        a.h5 {
             height: $h5 * 1.5 * 2;
+            line-height: 1.5;
             @include lineclamp(2);
         }
         .detail {
@@ -238,7 +244,7 @@ section {
         padding: 20px;
         margin-top: 20px;
         border: 1px solid $gray-200;
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(sm) {
             width: calc((100% - 20px) / 2);
             margin-left: 20px;
             &:nth-child(2n+1) {
