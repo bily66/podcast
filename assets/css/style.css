@@ -3797,7 +3797,9 @@ table {
 }
 
 .audio.green-audio-player .play-pause-btn {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3818,9 +3820,7 @@ table {
 }
 
 .audio.green-audio-player .loading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
