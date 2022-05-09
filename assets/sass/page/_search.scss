@@ -10,15 +10,31 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 45px;
+        @include media-breakpoint-up(md) {
+            gap: 45px;
+        }
+        @include media-breakpoint-down(md) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        li {
+            @include media-breakpoint-down(md) {
+                width: 33%;
+            }
+        }
         a {
             display: block;
-            min-width: 80px;
             padding-top: 11px;
             padding-bottom: 11px;
             color: $black;
             text-align: center;
             border-bottom: 3px solid transparent;
+            @include media-breakpoint-up(md) {
+                min-width: 80px;
+            }
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
             &:hover {
                 color: $primary;
             }
@@ -29,6 +45,7 @@
         }
     }
 }
+
 .filter-nav {
     border-bottom: 1px solid $gray-200;
     ul {
@@ -50,26 +67,41 @@
                 display: none;
                 position: absolute;
                 top: 100%;
-                left: 0;
                 min-width: 100%;
                 background-color: $white;
                 border: 1px solid $gray-200;
+                &:first-child {
+                    left: 0;
+                }
+                &:last-child {
+                    @include media-breakpoint-up(md) {
+                        left: 0;
+                    }
+                    @include media-breakpoint-down(md) {
+                        right: 0;
+                    }
+                    @media screen and (max-width: 374px) {
+                        right: -20px;
+                    }
+                }
                 > li {
-                    padding: 10px;
+                    padding: 12px 20px;
                     color: $black;
-                    text-align: center;
+                    white-space: nowrap;
                     &:hover {
-                        color: $primary;
+                        &:not(.datepicker) {
+                            color: $primary;
+                        }
+                    }
+                    &.datepicker {
+                        cursor: auto;
                     }
                 }
             }
-            &:hover {
+            &.active {
                 color: $primary;
                 .material-symbols-outlined {
                     transform: rotate(180deg);
-                }
-                > ul {
-                    display: block;
                 }
             }
         }
@@ -80,5 +112,30 @@
         'wght' 300,
         'GRAD' 0,
         'opsz' 48
+    }
+}
+
+.datepicker {
+    .d-flex {
+        align-items: center;
+        gap: 5px;
+        padding-top: 5px;
+        font-size: 0.75rem;
+    }
+    input {
+        width: 80px;
+        padding: 3px 5px;
+        border: 1px solid $gray-200;
+    }
+    button {
+        padding: 4px;
+        color: $white;
+        font-weight: 500;
+        background-color: $black;
+        border: 0;
+        cursor: pointer;
+        &:hover {
+            background-color: $primary-variant;
+        }
     }
 }

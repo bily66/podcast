@@ -268,9 +268,7 @@ section {
             }
             a {
                 display: block;
-                &.h5 {
-                    margin-top: 0;
-                    margin-bottom: 0;
+                &.btn-black {
                     @include lineclamp(2);
                 }
                 &.h6 {

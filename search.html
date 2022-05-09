@@ -7,6 +7,7 @@
     <title>搜尋結果頁｜天下聲音資料庫——解放雙手　用聽學習</title>
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Material+Icons+Round">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="search-page">
@@ -72,7 +73,15 @@
                         <li>不限時間</li>
                         <li>過去一年</li>
                         <li>過去三年</li>
-                        <li>自訂日期範圍</li>
+                        <li class="datepicker">
+                            自訂日期範圍
+                            <div class="d-flex">
+                                <input type="text" id="datepickerStart" placeholder="選擇起始日">
+                                ～
+                                <input type="text" id="datepickerEnd" placeholder="選擇結束日">
+                                <button type="button" class="btn btn-contained">確定</button>
+                            </div>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -259,6 +268,14 @@
     </footer>
     <div class="black"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://jqueryui.com/resources/demos/datepicker/i18n/datepicker-zh-TW.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        $( function() {
+            $("#datepickerStart").datepicker($.datepicker.regional['zh-TW']);
+            $("#datepickerEnd").datepicker($.datepicker.regional['zh-TW']);
+        } );
+    </script>
 </body>
 </html>

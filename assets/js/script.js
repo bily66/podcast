@@ -36,3 +36,13 @@ $('.preface-button').on('click', function () {
     $(this).hide();
     $(this).parent().siblings('.preface').removeClass('preface-ellipse');
 });
+
+$('.filter-nav > ul > li').on('click', function () {
+    $(this).siblings().removeClass('active');
+    $(this).siblings().children('ul').slideUp();
+    $(this).toggleClass('active');
+    $(this).children('ul').slideToggle();
+});
+$('.filter-nav > ul > li > ul').on('click', function (e) {
+    e.stopPropagation();
+});

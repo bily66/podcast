@@ -1,5 +1,8 @@
 nav.menu {
   background-color: $black;
+  @media print {
+    display: none;
+  }
   ul {
     @include list(0, 0, none);
     display: flex;
