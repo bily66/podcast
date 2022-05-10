@@ -3329,6 +3329,11 @@ footer {
   position: relative;
 }
 
+#management .slick-track {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .slick-dots {
   margin: 30px 0 0;
   padding: 0;
