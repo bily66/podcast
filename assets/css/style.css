@@ -4163,7 +4163,13 @@ section.opening .container {
 }
 
 section.opening h1 img {
-  height: 48px;
+  height: 42px;
+}
+
+@media screen and (min-width: 360px) {
+  section.opening h1 img {
+    height: 48px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -4173,7 +4179,13 @@ section.opening h1 img {
 }
 
 section.opening h2 img {
-  height: 24px;
+  height: 20px;
+}
+
+@media screen and (min-width: 360px) {
+  section.opening h2 img {
+    height: 24px;
+  }
 }
 
 @media (min-width: 1024px) {
