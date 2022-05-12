@@ -4979,6 +4979,7 @@ section .bg-images .container {
   position: absolute;
   top: 100%;
   min-width: 100%;
+  max-width: 265px;
   background-color: #ffffff;
   border: 1px solid #E3E3E3;
 }
@@ -5038,17 +5039,21 @@ section .bg-images .container {
           align-items: center;
   gap: 5px;
   padding-top: 5px;
-  font-size: 0.75rem;
+  font-size: 16px;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .datepicker input {
-  width: 75px;
-  padding: 3px 5px;
+  width: 110px;
+  padding: 6px 10px;
   border: 1px solid #E3E3E3;
 }
 
 .datepicker button {
-  padding: 4px;
+  padding: 7px;
   color: #ffffff;
   font-weight: 500;
   background-color: #000;
