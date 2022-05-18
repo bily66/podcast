@@ -17,9 +17,9 @@
             border-radius: 3em;
             span {
                 font-size: $h6;
-                &.material-icons-round {
-                    margin-left: 3px;
-                }
+            }
+            i[class*='icon-'] {
+                margin-left: 3px;
             }
         }
     }
@@ -232,8 +232,7 @@ section {
             .time {
                 display: flex;
                 align-items: center;
-                span.material-icons-outlined {
-                    margin-right: 5px;
+                i[class*='icon-'] {
                     font-size: $h6;
                 }
             }
@@ -295,8 +294,7 @@ section {
             .time {
                 display: flex;
                 align-items: center;
-                span.material-icons-outlined {
-                    margin-right: 5px;
+                i[class*='icon-'] {
                     font-size: $h6;
                 }
             }

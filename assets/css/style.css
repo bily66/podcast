@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -2998,6 +2999,77 @@ h6,
   color: #707070;
 }
 
+@font-face {
+  font-family: "podcast";
+  src: url("../fonts/podcast.eot?1vs87o");
+  src: url("../fonts/podcast.eot?1vs87o#iefix") format("embedded-opentype"), url("../fonts/podcast.ttf?1vs87o") format("truetype"), url("../fonts/podcast.woff?1vs87o") format("woff"), url("../fonts/podcast.svg?1vs87o#podcast") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "podcast" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-speaker:before {
+  content: "";
+}
+
+.icon-backward-30:before {
+  content: "";
+}
+
+.icon-forward-30:before {
+  content: "";
+}
+
+.icon-angle-down:before {
+  content: "";
+}
+
+.icon-angle-up:before {
+  content: "";
+}
+
+.icon-play:before {
+  content: "";
+}
+
+.icon-close:before {
+  content: "";
+}
+
+.icon-headphone:before {
+  content: "";
+}
+
+.icon-arrow-right:before {
+  content: "";
+}
+
+.icon-arrow-left:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+.icon-print:before {
+  content: "";
+}
+
 .hamburger {
   position: relative;
   width: 40px;
@@ -3085,14 +3157,14 @@ header .container-fluid, header .container-xs, header .container-sm, header .con
   }
 }
 
-nav.navbar .material-symbols-outlined {
+nav.navbar .icon-close {
   float: right;
-  font-size: 2rem;
-  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48;
+  padding: 5px;
+  font-size: 1.375rem;
 }
 
 @media (min-width: 1024px) {
-  nav.navbar .material-symbols-outlined {
+  nav.navbar .icon-close {
     display: none;
   }
 }
@@ -3205,8 +3277,9 @@ form.form-search button {
   background-color: transparent;
 }
 
-form.form-search button span {
+form.form-search button i {
   display: block;
+  font-size: 1.5rem;
 }
 
 .black {
@@ -3493,7 +3566,7 @@ footer {
           align-items: center;
 }
 
-.btn span.material-icons-round {
+.btn i[class*='icon-'] {
   margin-left: 3px;
 }
 
@@ -3543,12 +3616,8 @@ footer {
   color: #D60C18;
 }
 
-.list-group .list-item:hover svg path {
-  fill: #D60C18;
-}
-
-.list-group .list-item svg {
-  width: 25px;
+.list-group .list-item i[class*='icon-'] {
+  font-size: 1.5rem;
 }
 
 .list-group .list-item .title {
@@ -3607,8 +3676,7 @@ footer {
           align-items: center;
 }
 
-.list-group .list-item .detail .time span.material-icons-outlined {
-  margin-right: 5px;
+.list-group .list-item .detail .time i[class*='icon-'] {
   font-size: 0.875rem;
 }
 
@@ -3801,6 +3869,14 @@ table {
   }
 }
 
+.audio.green-audio-player .main-function .backward, .audio.green-audio-player .main-function .forward {
+  font-size: 2rem;
+}
+
+.audio.green-audio-player .main-function .backward i[class*='icon-'], .audio.green-audio-player .main-function .forward i[class*='icon-'] {
+  display: block;
+}
+
 .audio.green-audio-player .play-pause-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3839,7 +3915,7 @@ table {
 .audio.green-audio-player .loading .spinner {
   width: 18px;
   height: 18px;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/loading.png);
+  background-image: url("../images/loading.png");
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-animation: spin 0.4s linear infinite;
@@ -4106,7 +4182,7 @@ table {
   font-size: 0.875rem;
 }
 
-.index-page .title a.btn span.material-icons-round {
+.index-page .title a.btn i[class*='icon-'] {
   margin-left: 3px;
 }
 
@@ -4388,8 +4464,7 @@ section .bg-images .container {
           align-items: center;
 }
 
-.cards-channel .card-item .detail .time span.material-icons-outlined {
-  margin-right: 5px;
+.cards-channel .card-item .detail .time i[class*='icon-'] {
   font-size: 0.875rem;
 }
 
@@ -4488,8 +4563,7 @@ section .bg-images .container {
           align-items: center;
 }
 
-.cards-latest .card-item .detail .time span.material-icons-outlined {
-  margin-right: 5px;
+.cards-latest .card-item .detail .time i[class*='icon-'] {
   font-size: 0.875rem;
 }
 
@@ -4757,11 +4831,8 @@ section .bg-images .container {
 }
 
 .print-function:hover {
+  color: #D60C18;
   border-color: #D60C18;
-}
-
-.print-function:hover svg path {
-  fill: #D60C18;
 }
 
 .recommend-block {
@@ -4860,7 +4931,7 @@ section .bg-images .container {
           align-items: center;
 }
 
-.cards-recommend .detail .time span.material-icons-outlined {
+.cards-recommend .detail .time i[class*='icon-'] {
   margin-right: 5px;
   font-size: 0.875rem;
 }
@@ -5024,13 +5095,15 @@ section .bg-images .container {
   color: #D60C18;
 }
 
-.filter-nav > ul > li.active .material-symbols-outlined {
+.filter-nav > ul > li.active .icon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.filter-nav .material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48;
+.filter-nav .icon {
+  padding: 0 5px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .datepicker .d-flex {

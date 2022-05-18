@@ -1,0 +1,87 @@
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1vs87o');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1vs87o#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?1vs87o') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?1vs87o') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?1vs87o##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-speaker {
+  &:before {
+    content: $icon-speaker; 
+  }
+}
+.icon-backward-30 {
+  &:before {
+    content: $icon-backward-30; 
+  }
+}
+.icon-forward-30 {
+  &:before {
+    content: $icon-forward-30; 
+  }
+}
+.icon-angle-down {
+  &:before {
+    content: $icon-angle-down; 
+  }
+}
+.icon-angle-up {
+  &:before {
+    content: $icon-angle-up; 
+  }
+}
+.icon-play {
+  &:before {
+    content: $icon-play; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+.icon-headphone {
+  &:before {
+    content: $icon-headphone; 
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right; 
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-print {
+  &:before {
+    content: $icon-print; 
+  }
+}

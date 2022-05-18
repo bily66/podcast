@@ -104,3 +104,21 @@ $colors: map-merge((
   "secondary":          ($secondary,          $white),
   "secondary-variant":  ($secondary-variant,  $white),
 ), $colors);
+
+// ---------------------------------------------------------
+
+$icomoon-font-family: "podcast" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$icon-speaker: "\e900";
+$icon-backward-30: "\e901";
+$icon-forward-30: "\e902";
+$icon-angle-down: "\e903";
+$icon-angle-up: "\e904";
+$icon-play: "\e905";
+$icon-close: "\e906";
+$icon-headphone: "\e907";
+$icon-arrow-right: "\e908";
+$icon-arrow-left: "\e909";
+$icon-search: "\e90a";
+$icon-print: "\e90b";

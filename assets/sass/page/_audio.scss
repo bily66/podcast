@@ -110,12 +110,8 @@
         display: none;
     }
     &:hover {
+        color: $primary;
         border-color: $primary;
-        svg {
-            path {
-                fill: $primary;
-            }
-        }
     }
 }
 
@@ -181,7 +177,7 @@
         .time {
             display: flex;
             align-items: center;
-            span.material-icons-outlined {
+            i[class*='icon-'] {
                 margin-right: 5px;
                 font-size: $h6;
             }
